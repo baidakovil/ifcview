@@ -1,4 +1,4 @@
-import{ad as l,B as c,a as m,C as d,D as b,A as u}from"./web-ifc-api-JuXSH2nk.js";import{d as p,R as a,m as r}from"./index-CqPyogbW.js";import{o as h,a as f,M as g,v as w,N as y}from"./index-DtdmE_hK.js";import{S as v}from"./stats.min-GTpOrGrX.js";import"./_commonjsHelpers-Cpj98o6Y.js";const L=document.getElementById("container"),s=new h,k=s.get(f),e=k.create();e.scene=new g(s);e.renderer=new w(s,L);e.camera=new y(s);s.init();e.scene.three.background=null;const x=new l({color:"#6528D7"}),A=new c,B=new m(A,x);e.scene.three.add(B);e.scene.setup();e.camera.controls.setLookAt(3,3,3,0,0,0);const n=new v;n.showPanel(2);document.body.append(n.dom);n.dom.style.left="0px";n.dom.style.zIndex="unset";e.renderer.onBeforeUpdate.add(()=>n.begin());e.renderer.onAfterUpdate.add(()=>n.end());p.init();const i=a.create(()=>r`
+import{H as l,B as c,a as m,C as d,D as b,A as u}from"./web-ifc-api-BAs6yRon.js";import{d as p,R as a,m as r}from"./index-CqPyogbW.js";import{d as h,l as f,x as g,Y as w,b as y}from"./index-crgZK0po.js";import{S as v}from"./stats.min-GTpOrGrX.js";import"./_commonjsHelpers-Cpj98o6Y.js";const x=document.getElementById("container"),s=new h,L=s.get(f),e=L.create();e.scene=new g(s);e.renderer=new w(s,x);e.camera=new y(s);s.init();e.scene.three.background=null;const k=new l({color:"#6528D7"}),A=new c,B=new m(A,k);e.scene.three.add(B);e.scene.setup();e.camera.controls.setLookAt(3,3,3,0,0,0);const n=new v;n.showPanel(2);document.body.append(n.dom);n.dom.style.left="0px";n.dom.style.zIndex="unset";e.renderer.onBeforeUpdate.add(()=>n.begin());e.renderer.onAfterUpdate.add(()=>n.end());p.init();const i=a.create(()=>r`
     <bim-panel label="Worlds Tutorial" class="options-menu">
       <bim-panel-section collapsed label="Controls">
       
@@ -19,8 +19,8 @@ import{ad as l,B as c,a as m,C as d,D as b,A as u}from"./web-ifc-api-JuXSH2nk.js
         
       </bim-panel-section>
     </bim-panel>
-    `);document.body.append(i);const M=a.create(()=>r`
+    `);document.body.append(i);const $=a.create(()=>r`
       <bim-button class="phone-menu-toggler" icon="solar:settings-bold"
         @click="${()=>{i.classList.contains("options-menu-visible")?i.classList.remove("options-menu-visible"):i.classList.add("options-menu-visible")}}">
       </bim-button>
-    `);document.body.append(M);
+    `);document.body.append($);
