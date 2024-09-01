@@ -53,8 +53,8 @@ const writeIndexHTML = () => {
 const createIndex = () => ({
   name: "create-index",
   configureServer() {
-    // fs.watch("./packages", { recursive: true }, writeIndexHTML);
-    writeIndexHTML();
+    fs.watch("./packages", { recursive: true }, writeIndexHTML);
+    // writeIndexHTML();
   },
 });
 
