@@ -9,7 +9,7 @@ const writeIndexHTML = () => {
   const examplePaths = globSync("packages/**/src/**/example.html");
   for (const examplePath of examplePaths) {
     const directory = path.dirname(examplePath);
-    const packageNameMatch = directory.match(/packages\\([^\\]+)/);
+    const packageNameMatch = directory.match(/packages[\\/](.*?)[\\/]/);
     if (!(packageNameMatch && packageNameMatch.length > 1)) continue;
     const packageName = packageNameMatch[1];
     const exampleName = path.basename(directory);
@@ -54,7 +54,7 @@ const createIndex = () => ({
   name: "create-index",
   configureServer() {
     fs.watch("./packages", { recursive: true }, writeIndexHTML);
-    // writeIndexHTML();
+    writeIndexHTML(); // Ensure the index is written initially
   },
 });
 
